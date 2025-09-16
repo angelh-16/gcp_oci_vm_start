@@ -1,7 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
-## Video
-Loom/Zoom: <paste link>
+## Video Tutorials:
+GCP: <paste link> \
+OCI: <paste link>
 
 ## Prereqs
 - Cloud access to GCP and OCI
@@ -10,26 +11,65 @@ Loom/Zoom: <paste link>
 ---
 
 ## Google Cloud (GCP)
-### Create
-1. Console → Compute Engine → Create instance
-2. Region/zone: <your choice>
-3. Machine type: <smallest available/free-eligible>
-4. Image: Ubuntu LTS
-5. Boot disk: default minimal
-6. Network: default VPC; ephemeral public IP
+### Create/Start VM
+ **pictures of each step are under the images and gcp folder* * 
+1. Go to [google cloud](https://console.cloud.google.com)
+2. Make sure you created and selected a project
+3. Click Create a VM
 
-![GCP create](images/gcp_create.png)
+![GCP create](images/gcp/gcp_step1-3.png)
 
-### Start/Stop
-- Start: <state shows RUNNING>
-- Stop: <state shows TERMINATED/STOPPED>
+4. Give it a name under " Name* "
+5. Chose a " Region* " and " Zone* " of your chose, better if it's a region near you
+6. Scroll down and choose a Machine type
+- In this case E2 (smallest available/free-eligible) and scroll down more and pick e2-micro
 
-![GCP running](images/gcp_running.png)
+![GCP create](images/gcp/gcp_step6.2.png)
 
-### Delete
-- Delete instance and verify no disks/IPs remain
+7. Then click " OS and storage "
+8. Click " Change "
+9. Under " Operating system ", click " Ubuntu " and then click " Select "
 
-![GCP cleaned](images/gcp_clean.png)
+![GCP create](images/gcp/gcp_step9-10.png)
+
+10. Others will remain at default
+- Boot disk: default minimal
+- Network: default VPC; ephemeral public IP
+11. Click " Create "
+- Once you see a green circle with a check next to the name of your VM, it is up and running
+
+![GCP create](images/gcp/gcp_step11.2.png)
+
+### Optional
+12. Now click on the name of your VM
+13. Click the " SSH " button and then " Authorize "
+14. Type in "sudo apt-get update" and then enter
+- This command updates the package lists for upgrades of packages that need upgrading
+- Example: you can type " python3 " after to run python codes
+
+![GCP create](images/gcp/gcp_step14.png)
+
+15. Type in "exit()" and then enter and close the tab to leave
+
+### Stop VM
+16. Click the back arrow next to the name of your VM
+17. Click on the 3 dots
+18. Click " Stop " and " Stop " again
+
+![GCP create](images/gcp/gcp_step17-18.1.png)
+
+- Once it shows a gray circle with a white square, it means your VM has stopped running
+
+![GCP create](images/gcp/gcp_step18.3.png)
+
+- To start it again you can click the 3 dots and click on " Start/Resume " and then go back to step 11
+
+### Delete VM
+19. To delete it, click the 3 dots again
+20. Then click delete
+21. Once it is deleted, you should not see it anymore under " VM instances "
+
+![GCP create](images/gcp/gcp_step21.png)
 
 ---
 
