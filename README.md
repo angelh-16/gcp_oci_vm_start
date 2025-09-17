@@ -17,20 +17,20 @@
 2. Make sure you created and selected a project
 3. Click Create a VM
 
-![GCP create](images/gcp/gcp_step1-3.png)
+![GCP create](images/gcp/gcp_step01-03.png)
 
 4. Give it a name under " Name* "
 5. Chose a " Region* " and " Zone* " of your chose, better if it's a region near you
 6. Scroll down and choose a Machine type
 - In this case E2 (smallest available/free-eligible) and scroll down more and pick e2-micro
 
-![GCP create](images/gcp/gcp_step6.2.png)
+![GCP create](images/gcp/gcp_step06.2.png)
 
 7. Then click " OS and storage "
 8. Click " Change "
 9. Under " Operating system ", click " Ubuntu " and then click " Select "
 
-![GCP create](images/gcp/gcp_step9-10.png)
+![GCP create](images/gcp/gcp_step09-10.png)
 
 10. Others will remain at default
 - Boot disk: default minimal
@@ -79,7 +79,7 @@
 1. Go to [Oracle Cloud](https://www.oracle.com/cloud/) and sign in
 2. Click " Create an instance " under " Build "
 
-![OCI create](images/oci/oci_step1-2.png)
+![OCI create](images/oci/oci_step01-02.png)
 
 3. Give it a name
 4. Scroll down and select a domain available to you (You should be fine with the default one)
@@ -93,7 +93,7 @@
 - Image: " VM.Standard.E2.1.Micro "
 - Then click " Select shape "
 
-![OCI create](images/oci/oci_step9.2.png)
+![OCI create](images/oci/oci_step09.2.png)
 
 10. Click " Next " to move on to " Security "
 11. Then click " Next " again to move on to " Networking "
