@@ -1,8 +1,8 @@
 # VM Lifecycle on GCP and OCI — Tutorial
 
 ## Video Tutorials:
-GCP: <paste link> \
-OCI: <paste link>
+[GCP](https://drive.google.com/file/d/1a4BTrVuhYcnG6hstJIy5gzcCTQn4F0Ew/view?usp=sharing) \
+[OCI](https://drive.google.com/file/d/1HGctj1jL_aiEZU82N-1RlUXmTbPR7pNa/view?usp=sharing)
 
 ## Prereqs
 - Cloud access to GCP and OCI
@@ -135,10 +135,19 @@ OCI: <paste link>
 
 ## Reflections
 ### Similarities
-- <brief bullets>
+- Both have free trail and no billing informations required.
+- Both have easy to navigate tabs on the home page.
+- Both have descriptins of what each section does and the functions that come with it while navigating through the setup.
+- Both have the settings choosing domains, operating systems, networking, and security settings.
+- Both have free trail and no billing informations required.
+- Both have the start, stop, monitor and delete VM buttons
 
 ### Differences
-- <brief bullets>
+- OCI required a SSO sign in each time and logs you out when inactive while GCP is signed in automatically when you are signed into your email.
+- Both have different UI setups: GCP had everything in tabs that u had to click on and go through on your choice while OCI had to have you scroll and click next on each section and makes you go through each step.
+- Pricing and machine types are different.
+- GCP was faster to load while OCI took a while.
+
 
 ### Preference (OCI vs GCP) and Why
-- <one short paragraph>
+- My preference would be Google Cloud (GCP) over Oracle Cloud (OCI). I like how user-friendly the UI is with GCP ad how fast the VM can be created, ran, stopped, and deleted. The OCI process took a lot longer and I had to wait for a while and cut out some time in the tutorial videos. I feel like GCP is a lot more beginner-friendly with the tabs on the side for users to go into and click out of while OCI you had to go through each one and scroll.
