@@ -13,7 +13,7 @@ OCI: <paste link>
 ## Google Cloud (GCP)
 ### Create/Start VM
  **pictures of each step are under the images and gcp folder* * 
-1. Go to [google cloud](https://console.cloud.google.com)
+1. Go to [google cloud](https://console.cloud.google.com) and sign in
 2. Make sure you created and selected a project
 3. Click Create a VM
 
@@ -74,26 +74,62 @@ OCI: <paste link>
 ---
 
 ## Oracle Cloud (OCI)
-### Create
-1. Compartment: <name>
-2. Networking: VCN with Internet Connectivity (defaults)
-3. Shape: <smallest/free-eligible>
-4. Image: Ubuntu (or Oracle Linux)
-5. Public IP: ephemeral
-6. Boot volume: default minimal
+### Create/Start VM
+1. Go to [Oracle Cloud](https://www.oracle.com/cloud/) and sign in
+2. Click " Create an instance " under " Build "
 
-![OCI create](images/oci_create.png)
+![OCI create](images/oci/oci_step1-2.png)
 
-### Start/Stop
-- Start: <state shows RUNNING>
-- Stop: <state shows STOPPED>
+3. Give it a name
+4. Scroll down and select a domain available to you (You should be fine with the default one)
+- Networking: VCN with Internet Connectivity (defaults)
+5. Scroll down and clcik " Change image "
+6. Chose " Ubuntu " or " Oracle Linux "
+7. Then click " Select image "
+8. Scroll down and then click " Change shape "
+9. Choose the smallest/free eligible
+- Shape series: " Specialty and previous generation "
+- Image: " VM.Standard.E2.1.Micro "
+- Then click " Select shape "
 
-![OCI running](images/oci_running.png)
+![OCI create](images/oci/oci_step9.2.png)
 
-### Terminate
-- Terminate and delete boot volume; verify cleanup
+10. Click " Next " to move on to " Security "
+11. Then click " Next " again to move on to " Networking "
+12. Give the " VNIC name " a name
+13. If you don't have a subnet, click " Create new public subnet "
 
-![OCI cleaned](images/oci_clean.png)
+![OCI create](images/oci/oci_step13.png)
+
+14. Click " Download private key" and " Download public key "
+15. Click " Next " again to move on to " Networking "
+16. Click " Next " again to move on to " Review "
+17. Review all the information and see if you need to chang anything and then click " Create " when ready
+18. Once it says " Succeded " in green under state, the VM is ready to run
+
+![OCI create](images/oci/oci_step18.png)
+
+19. You can click " Start " to started the VM up or run it
+20. It should show " Running " next to the name of your VM
+
+![OCI create](images/oci/oci_step20.png)
+
+### Stop VM
+21. Click on the pull down tab of " Actions " and then click " Stop "
+22. Click " Stop instance "
+
+![OCI create](images/oci/oci_step22.png)
+
+23. Once it shows the red " Stopped ", the VM has stopped running
+
+![OCI create](images/oci/oci_step23.png)
+
+### Terminate VM
+24. Click on the pull down tab of " Actions " and then click " Terminate "
+25. Click " Terminate instance "
+26. Once it shows the gray " Terminated ", the VM has been deleted
+
+![OCI create](images/oci/oci_step26.2.png)
 
 ---
 
