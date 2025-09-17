@@ -11,8 +11,8 @@
 ---
 
 ## Google Cloud (GCP)
-### Create/Start VM
  **pictures of each step are under the images and gcp folder* * 
+### Create/Start VM
 1. Go to [google cloud](https://console.cloud.google.com) and sign in
 2. Make sure you created and selected a project
 3. Click Create a VM
@@ -74,6 +74,7 @@
 ---
 
 ## Oracle Cloud (OCI)
+**pictures of each step are under the images and oci folder* * 
 ### Create/Start VM
 1. Go to [Oracle Cloud](https://www.oracle.com/cloud/) and sign in
 2. Click " Create an instance " under " Build "
@@ -147,7 +148,6 @@
 - Both have different UI setups: GCP had everything in tabs that u had to click on and go through on your choice while OCI had to have you scroll and click next on each section and makes you go through each step.
 - Pricing and machine types are different.
 - GCP was faster to load while OCI took a while.
-
 
 ### Preference (OCI vs GCP) and Why
 - My preference would be Google Cloud (GCP) over Oracle Cloud (OCI). I like how user-friendly the UI is with GCP ad how fast the VM can be created, ran, stopped, and deleted. The OCI process took a lot longer and I had to wait for a while and cut out some time in the tutorial videos. I feel like GCP is a lot more beginner-friendly with the tabs on the side for users to go into and click out of while OCI you had to go through each one and scroll.
